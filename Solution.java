@@ -4,8 +4,8 @@ public class Solution {
     public int maxDivScore(int[] nums, int[] divisors) {
         List<Integer> divScores = new ArrayList<>(divisors.length);
         List<Integer> maxDivScoreIndeces = new ArrayList<>();
-        int maxDivScore = -10000;
-        int minDivisor = 1000000000;
+        int maxDivScore = Integer.MIN_VALUE;
+        int minDivisor = Integer.MAX_VALUE;
 
         for (int num : nums) {
             for (int index = 0; index < divisors.length; index++) {
